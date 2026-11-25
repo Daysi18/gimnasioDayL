@@ -1,0 +1,150 @@
+{
+  "info": {
+    "_postman_id": "72335df7-c065-4d67-a39e-87fb6b9dbe29",
+    "name": "tarea gimnasio",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "60051679"
+  },
+  "item": [
+    {
+      "name": "post",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Yoga\",\r\n  \"instructor\": \"Sofía Vela\",\r\n  \"horario\": \"18:30\",\r\n  \"cupos\": 12\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8082/api/clase",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "clase"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8082/api/maquina",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "maquina"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get ingresos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8082/api/socio/ingresos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "socio",
+            "ingresos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8082/api/socio/1/desactivar",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "socio",
+            "1",
+            "desactivar"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8082/api/clase/con-cupos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "clase",
+            "con-cupos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "endpoints especiales",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8082/api/maquina/antiguas?anios=5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "maquina",
+            "antiguas"
+          ],
+          "query": [
+            {
+              "key": "anios",
+              "value": "5"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
